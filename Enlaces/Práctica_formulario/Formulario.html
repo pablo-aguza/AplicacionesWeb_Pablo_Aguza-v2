@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedido de Pizza</title>
+  <link rel="stylesheet" href="css/formulariocss.css">
+</head>
+<body>
+
+    <div class="formulario">
+        <h2>- Pedido de pizza -</h2>
+        <form action="#" method="post">
+
+            <div>
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="nombre" required> <!--Requireed para obligar la respuesta-->
+
+                <label for="dirección">Dirección:</label>
+                <input type="text" name="direccion" required> <!--Required para obligar la respuesta-->
+
+                <label>Edad:</label> <!--Min y max para rango de edad-->
+                <input type="number" name="edad" min="25" max="65" required> <!--Required para obligar la respuesta-->
+            </div>
+
+            <fieldset>
+                <legend>Ingredientes</legend>
+                <input type="checkbox" name="ingrediente" value="queso"> Queso
+                <input type="checkbox" name="ingrediente" value="pimiento"> Pimiento
+                <input type="checkbox" name="ingrediente" value="cebolla"> Cebolla
+            </fieldset>
+
+            <fieldset>
+                <legend>Tamaño</legend>
+                <input type="radio" name="tamano" value="pequeña"> Pequeña
+                <input type="radio" name="tamano" value="mediana"> Mediana
+                <input type="radio" name="tamano" value="Familiar"> Familiar
+            </fieldset>
+
+            <fieldset>
+                <legend>Forma de pago</legend>
+                <select name="pago">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="efectivo">Efectivo</option>
+                </select>
+            </fieldset>
+
+                <h2 class="instrucciones">Instrucciones especiales</h2>
+                <textarea name="instrucciones"></textarea>
+
+            <div class="botones">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
